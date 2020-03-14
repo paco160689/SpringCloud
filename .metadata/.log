@@ -4432,3 +4432,24 @@ Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: file:///D:\Sprin
 	at org.eclipse.jgit.transport.Transport.open(Transport.java:584)
 	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:189)
 	... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-14 21:35:56.528
+!MESSAGE locking FileBasedConfig[C:\Users\paco_\.config\jgit\config] failed after 5 retries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-14 21:46:07.457
+!MESSAGE Preparing classpath changed notification springboot-servicio-item
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-14 21:46:07.477
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-14 21:46:07.491
+!MESSAGE classpath=173 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-14 21:46:07.503
+!MESSAGE buffering callback sts4.classpath.oEFLSeVg springboot-servicio-item false 173
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-14 21:46:07.509
+!MESSAGE executing callback sts4.classpath.oEFLSeVg 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-14 21:46:07.523
+!MESSAGE executing callback sts4.classpath.oEFLSeVg SUCCESS [done]
