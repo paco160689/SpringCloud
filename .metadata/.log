@@ -4453,3 +4453,33 @@ Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: file:///D:\Sprin
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-14 21:46:07.523
 !MESSAGE executing callback sts4.classpath.oEFLSeVg SUCCESS [done]
+
+!ENTRY org.eclipse.egit.core 4 0 2020-03-14 22:12:56.081
+!MESSAGE Deleting resource D:\SpringCloud\workspace\servicio-items-config\.git failed.
+!STACK 0
+java.io.IOException: Could not delete file D:\SpringCloud\workspace\servicio-items-config\.git\objects\06\5e77dcde69a19ffd47a938940532be4f52e5fe
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:247)
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:197)
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:199)
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:199)
+	at org.eclipse.egit.core.op.DeletePathsOperation.deletePaths(DeletePathsOperation.java:94)
+	at org.eclipse.egit.core.op.DeletePathsOperation.access$0(DeletePathsOperation.java:77)
+	at org.eclipse.egit.core.op.DeletePathsOperation$1.run(DeletePathsOperation.java:65)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.egit.core.op.DeletePathsOperation.execute(DeletePathsOperation.java:68)
+	at org.eclipse.egit.core.internal.job.JobUtil$2.runInWorkspace(JobUtil.java:107)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: D:\SpringCloud\workspace\servicio-items-config\.git\objects\06\5e77dcde69a19ffd47a938940532be4f52e5fe
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:89)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:274)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1145)
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:219)
+	... 12 more
+
+!ENTRY org.eclipse.egit.core 4 0 2020-03-14 22:12:56.092
+!MESSAGE Deleting resources failed. See log for details
