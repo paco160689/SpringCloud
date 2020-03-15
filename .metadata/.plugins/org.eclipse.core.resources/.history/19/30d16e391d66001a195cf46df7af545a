@@ -1,8 +1,0 @@
-package com.formacionbdi.springboot.app.zuul.filters;
-
-import org.springframework.stereotype.Component;
-
-@Component
-public class PreTiempoTranscurridoFilter extends ZuulFilter {
-
-}
